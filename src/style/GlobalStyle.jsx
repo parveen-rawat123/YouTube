@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
         list-style: none;
     }
     body{
+      background-color: #000;
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-style: normal;

@@ -4,3 +4,4 @@ export { default as ChanelDetails } from "./ChanelDetails";
 export { default as SearchFeed } from "./SearchFeed";
 export { default as VideoDetails } from "./VideoDetails";
 export {default as SearchBaar}  from "./SearchBaar"
+export {default as Sidebaar}  from "./Sidebaar"
