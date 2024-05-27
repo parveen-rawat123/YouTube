@@ -2,17 +2,21 @@ import styled from "styled-components";
 import { categories } from "../utils/Constant";
 import { useState } from "react";
 
-const Sidebaar = () => {
+const Sidebaar = ({ setselectedCategory }) => {
+
   const [activeButton, setActiveButton] = useState(categories[0].name);
 
   const changeColor = (categoryName) => {
+    setselectedCategory(categories.name)
     setActiveButton(categoryName);
   };
 
   return (
     <SidebaarStyled>
       {categories.map((category) => (
-        <div className="container" key={category.name}>
+        <div className="container" key={category.name}
+        onClick={()=> setselectedCategory(category.name)}
+        >
           <button
             onClick={() => changeColor(category.name)}
             className={activeButton === category.name ? "active" : ""}
