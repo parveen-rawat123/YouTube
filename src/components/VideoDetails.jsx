@@ -1,19 +1,20 @@
 import styled from "styled-components"
-
-const VideoDetails = ({video}) => {
+import VideoCard from "./VideoCard"
+import ChannelCard from "./ChannelCard"
+const VideoDetails = ({ video }) => {
   console.log(video)
   return (
-  <ShowVideo>
-     {video.map((item,idx)=>(
-       <div key={idx}>
-         {/* {item.id.videoId && <VideoCard video={item} />} */}
-         {/* {item.id.chanelId && <ChanelCard video={item} />} */}
-        
-       </div>
-     ))}
-      </ShowVideo>
+    <ShowVideo>
+      {video.map((item, idx) => (
+        <div key={idx}>
+          {console.log(item)}
+          {item.id.videoId && <VideoCard video={item} />}
+          {/* {item.id.chanelId && <ChannelCard video={item} />} */}
+        </div>
+      ))}
+    </ShowVideo>
   )
-}
+};
 
 const ShowVideo = styled.div`
    display: flex;

@@ -22,7 +22,8 @@ const Feed = () => {
       <h1>
         {selectedCategory}
         selected category   </h1>
-        <VideoDetails video = {[video]}/>
+        <h2>hello </h2>
+        {/* <VideoDetails video = {[video]}/> */}
     </Feedstyled>
   )
 }

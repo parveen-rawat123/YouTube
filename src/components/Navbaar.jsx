@@ -1,13 +1,17 @@
 import { Link } from "@mui/material"
-import {logo} from "../utils/Constant"
+import MenuIcon from '@mui/icons-material/Menu';
 import SearchBaar from "./SearchBaar"
 import styled from "styled-components"
+import Logo from "./Logo";
 const Navbaar = () => {
 return(
     <NavbarStyled>
-    <Link to="/">
-      <img src={logo} alt="" height={55} width="auto" />
+    <Link to="/" className="logo">
+    <MenuIcon/>
+    <Logo/>
     </Link>
+
+
 
     <SearchBaar/>   
   </NavbarStyled> 
